@@ -107,5 +107,6 @@ print("Searching for 15 in BST:", "Found" if bst.search(15) else "Not Found")  #
 When you run the script, it will display the results of all search algorithms with pre-defined test data. Here's an example of the output:
 ![image](https://github.com/user-attachments/assets/14afe147-cad1-451f-84f4-9405eec44590)
 
-trees.py:
+![8mcsD1y](https://github.com/user-attachments/assets/0073e271-d055-4b11-b0db-32649b7e7bea)
+
 
