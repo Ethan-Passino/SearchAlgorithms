@@ -76,9 +76,39 @@ Welcome to the **Search Algorithms in Python** repository! This project showcase
 
 ---
 
+### **10. A* Search**
+- **Description**: Combines BFS with heuristics to find the shortest path efficiently in a weighted graph.
+- **Best Use**: Pathfinding (e.g., in games and navigation systems).
+- **Time Complexity**: O(E) (E = edges)
+- **Space Complexity**: O(V)
+
+---
+
+### **11. Fibonacci Search**
+- **Description**: A variant of binary search using Fibonacci numbers to divide the search range.
+- **Best Use**: Works well on sorted datasets where the dataset size is known.
+- **Time Complexity**: O(log n)
+- **Space Complexity**: O(1)
+
+---
+
+### **12. Knuth-Morris-Pratt (KMP) Algorithm**
+- **Description**: Used for pattern searching in strings by preprocessing the pattern to skip unnecessary comparisons.
+- **Best Use**: String matching.
+- **Time Complexity**: O(n + m) (n = text length, m = pattern length)
+- **Space Complexity**: O(m)
+
+---
+
+### **13. Binary Search in 2D Matrix**
+- **Description**: Performs a binary search in a row-wise or column-wise sorted 2D matrix.
+- **Best Use**: Efficient search in grid data.
+- **Time Complexity**: O(log(mn)) (m = rows, n = columns)
+- **Space Complexity**: O(1)
+
+---
+
 ## **How to Use 🛠️**
-
-
 
 Each algorithm is implemented as a standalone function. Simply call the function with your dataset and target value. Here’s an example:
 
@@ -99,6 +129,20 @@ bst.insert(10)
 bst.insert(5)
 bst.insert(15)
 print("Searching for 15 in BST:", "Found" if bst.search(15) else "Not Found")  # Output: Found
+
+# A* Search
+graph = {
+    'A': [('B', 1), ('C', 3)],
+    'B': [('D', 1), ('E', 3)],
+    'C': [('F', 2)],
+    'D': [('G', 3)],
+    'E': [('G', 1)],
+    'F': [('G', 2)],
+    'G': []
+}
+heuristic = {'A': 6, 'B': 4, 'C': 5, 'D': 2, 'E': 2, 'F': 3, 'G': 0}
+astar = AStar(graph, heuristic)
+print("Path from A to G:", astar.search('A', 'G'))  # Output: ['A', 'B', 'E', 'G']
 
 ```
 
