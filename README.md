@@ -153,4 +153,7 @@ When you run the script, it will display the results of all search algorithms wi
 
 ![8mcsD1y](https://github.com/user-attachments/assets/0073e271-d055-4b11-b0db-32649b7e7bea)
 
+![image](https://github.com/user-attachments/assets/2bfe2a54-732a-4e8a-8bfa-159b77733fd4)
+
+
 
