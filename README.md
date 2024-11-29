@@ -177,5 +177,7 @@ When you run the script, it will display the results of all search algorithms wi
 
 ![image](https://github.com/user-attachments/assets/2bfe2a54-732a-4e8a-8bfa-159b77733fd4)
 
+![KT5YfSA](https://github.com/user-attachments/assets/8abc0baf-6f90-4332-8695-352840508b44)
+
 
 
