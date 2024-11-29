@@ -1,7 +1,7 @@
 # **Search Algorithms in Python 🧠⚡**
 
 Welcome to the **Search Algorithms in Python** repository! This project showcases the implementation of some of the most fundamental and efficient search algorithms in computer science. Each algorithm is written in Python, with detailed comments explaining their **time complexity**, **space complexity**, and **use cases**. Perfect for learning and experimentation! 🚀
-Data structures coming soon
+
 ---
 
 ## **Algorithms Implemented 📚**
@@ -108,41 +108,63 @@ Data structures coming soon
 
 ---
 
+### **14. Bidirectional Search**
+- **Description**: Searches from both the start and goal nodes, meeting in the middle.
+- **Best Use**: Pathfinding when start and goal are both defined.
+- **Time Complexity**: O(b^(d/2)) (b = branching factor, d = depth of the solution)
+- **Space Complexity**: O(b^(d/2))
+
+---
+
+### **15. Iterative Deepening Search (IDS)**
+- **Description**: Combines the space efficiency of DFS with the optimality of BFS by incrementally increasing the depth limit.
+- **Best Use**: When the depth of the solution is unknown.
+- **Time Complexity**: O(b^d)
+- **Space Complexity**: O(d)
+
+---
+
+### **16. Dijkstra's Algorithm**
+- **Description**: Finds the shortest path in a graph with non-negative weights.
+- **Best Use**: Weighted graphs for single-source shortest path problems.
+- **Time Complexity**: O(V^2) (or O((V + E) log V) with a priority queue)
+- **Space Complexity**: O(V + E)
+
+---
+
+### **17. Bellman-Ford Algorithm**
+- **Description**: Solves the single-source shortest path problem in graphs with negative weights.
+- **Best Use**: Weighted graphs where edge weights may be negative.
+- **Time Complexity**: O(VE)
+- **Space Complexity**: O(V)
+
+---
+
 ## **How to Use 🛠️**
 
 Each algorithm is implemented as a standalone function. Simply call the function with your dataset and target value. Here’s an example:
 
 ```python
-# Linear and Binary Search
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-print("Linear Search:", linear_search(arr, 5))  # Output: 4
-print("Binary Search:", binary_search(arr, 5))  # Output: 4
-
-# Hash Table Search
-hash_table = HashTable()
-hash_table.insert('apple', 1)
-print("Hash Table Search:", hash_table.search('apple'))  # Output: 1
-
-# Binary Search Tree (BST) Search
-bst = BinarySearchTree()
-bst.insert(10)
-bst.insert(5)
-bst.insert(15)
-print("Searching for 15 in BST:", "Found" if bst.search(15) else "Not Found")  # Output: Found
-
-# A* Search
-graph = {
-    'A': [('B', 1), ('C', 3)],
-    'B': [('D', 1), ('E', 3)],
-    'C': [('F', 2)],
-    'D': [('G', 3)],
-    'E': [('G', 1)],
-    'F': [('G', 2)],
-    'G': []
+# Dijkstra's Algorithm
+weighted_graph = {
+    'A': [('B', 1), ('C', 4)],
+    'B': [('A', 1), ('C', 2), ('D', 6)],
+    'C': [('A', 4), ('B', 2), ('D', 3)],
+    'D': [('B', 6), ('C', 3)]
 }
-heuristic = {'A': 6, 'B': 4, 'C': 5, 'D': 2, 'E': 2, 'F': 3, 'G': 0}
-astar = AStar(graph, heuristic)
-print("Path from A to G:", astar.search('A', 'G'))  # Output: ['A', 'B', 'E', 'G']
+print("Shortest paths from A:", dijkstra(weighted_graph, 'A'))  # Output: {'A': 0, 'B': 1, 'C': 3, 'D': 6}
+
+# Bidirectional Search
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B', 'F'],
+    'F': ['C', 'E']
+}
+bi_search = BidirectionalSearch(graph)
+print("Path from A to F:", bi_search.search('A', 'F'))  # Output: ['A', 'C', 'F']
 
 ```
 
