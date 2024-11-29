@@ -1,7 +1,7 @@
 # **Search Algorithms in Python 🧠⚡**
 
 Welcome to the **Search Algorithms in Python** repository! This project showcases the implementation of some of the most fundamental and efficient search algorithms in computer science. Each algorithm is written in Python, with detailed comments explaining their **time complexity**, **space complexity**, and **use cases**. Perfect for learning and experimentation! 🚀
-
+Data structures coming soon
 ---
 
 ## **Algorithms Implemented 📚**
@@ -152,5 +152,8 @@ When you run the script, it will display the results of all search algorithms wi
 ![image](https://github.com/user-attachments/assets/14afe147-cad1-451f-84f4-9405eec44590)
 
 ![8mcsD1y](https://github.com/user-attachments/assets/0073e271-d055-4b11-b0db-32649b7e7bea)
+
+![image](https://github.com/user-attachments/assets/2bfe2a54-732a-4e8a-8bfa-159b77733fd4)
+
 
 
