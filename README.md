@@ -170,7 +170,7 @@ print("Path from A to F:", bi_search.search('A', 'F'))  # Output: ['A', 'C', 'F'
 
 ## Running Results 🖥️
 
-When you run the script, it will display the results of all search algorithms with pre-defined test data. Here's an example of the output:
+When you run the script, it will display the results of all search algorithms with pre-defined test data.
 ![image](https://github.com/user-attachments/assets/14afe147-cad1-451f-84f4-9405eec44590)
 
 ![8mcsD1y](https://github.com/user-attachments/assets/0073e271-d055-4b11-b0db-32649b7e7bea)
